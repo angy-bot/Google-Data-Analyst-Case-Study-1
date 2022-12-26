@@ -6,3 +6,7 @@ The pricing plans offered by Cyclistic are three: single-ride passes, full-day p
 
 A new marketing strategy is being developed by the company to convert casual riders into annual members in order to increase revenue. In order to develop a data-driven marketing strategy, I will analyze bike usage data to determine how casual riders and annual members use Cyclistic bikes differently.
 
+# **ASK**
+
+The first basic question that has been asked and needs to be answered is: </br>
+How do annual members and occasional riders use Cyclistic bikes differently?
