@@ -17,3 +17,9 @@ And with the answer to this question, find ways to get occasional riders to beco
 
 Here is a public dataset that I will use. Motivate International Inc. has made the data available under this license. Public datasets do not contain personal information, so it is not possible to determine how often a rider uses the same service. </br>
 There was a slight variation in column names between the various datasets. However, within the 2021 - 2022 dataset, it is pertinent to note that the start and end stations, the start and end ride times, as well as the members and casual riders, are the key columns worth noting. Visualizing the data was also made easier by the latitude and longitude columns.</br>
+
+# **PROCESS Stage**
+
+The tools used for this stage were BigQuery, Google Sheets, and RStudio. 
+
+A particular focus was placed on ensuring the integrity of the data by using Google Sheets. 
