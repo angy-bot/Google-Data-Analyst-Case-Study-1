@@ -6,9 +6,14 @@ The pricing plans offered by Cyclistic are three: single-ride passes, full-day p
 
 A new marketing strategy is being developed by the company to convert casual riders into annual members in order to increase revenue. In order to develop a data-driven marketing strategy, I will analyze bike usage data to determine how casual riders and annual members use Cyclistic bikes differently.
 
-# **ASK**
+# **ASK stage**
 
 The first basic question that has been asked and needs to be answered is: </br>
 #### How do annual members and occasional riders use Cyclistic bikes differently? </br>
 
 And with the answer to this question, find ways to get occasional riders to become members.
+
+# **PREPARE Stage**
+
+Here is a public dataset that I will use. Motivate International Inc. has made the data available under this license. Public datasets do not contain personal information, so it is not possible to determine how often a rider uses the same service. </br>
+There was a slight variation in column names between the various datasets. However, within the 2021 - 2022 dataset, it is pertinent to note that the start and end stations, the start and end ride times, as well as the members and casual riders, are the key columns worth noting. Visualizing the data was also made easier by the latitude and longitude columns.</br>
