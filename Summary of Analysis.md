@@ -1,4 +1,4 @@
-**Background** 
+#**Background** 
 
 As a data analyst at Cyclistic, a fictional bike-share company in Chicago, I am responsible for this case study. The Cyclistic bicycle fleet has grown to 5,824 bicycles that are geotracking and locked into 692 stations across Chicago since its inception in 2016. It is possible to unlock the bikes at any station and return them to any other station within the system at any time.
 
