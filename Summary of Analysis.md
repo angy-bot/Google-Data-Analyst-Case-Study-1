@@ -18,6 +18,6 @@ There was a slight variation in column names between the various datasets. Howev
 
 # **PROCESS Stage**
 
-The tools used for this stage were BigQuery, Google Sheets, and RStudio. 
+This is the point at which the data has been processed. A thorough review was conducted to ensure that no errors were introduced, and further processing was performed to make the analysis more effective. As part of this process, Google Sheets was used. 
 
-A particular focus was placed on ensuring the integrity of the data by using Google Sheets. 
+During data processing, two new columns were added. In this table, ride_length indicates the total ride time, and day_of_week indicates the day the ride started.
