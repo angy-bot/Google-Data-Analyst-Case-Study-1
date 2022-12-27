@@ -8,10 +8,8 @@ A new marketing strategy is being developed by the company to convert casual rid
 
 # **ASK stage**
 
-The first basic question that has been asked and needs to be answered is: </br>
-#### How do annual members and occasional riders use Cyclistic bikes differently? </br>
-
-And with the answer to this question, find ways to get occasional riders to become members.
+**Business Task**</br>
+Cyclistic bicycle membership differs from occasional use, and how occasional riders get influenced to join. This study aims to understand the differences and influence of annual members.
 
 # **PREPARE Stage**
 
