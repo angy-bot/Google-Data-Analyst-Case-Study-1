@@ -14,10 +14,9 @@ Cyclistic bicycle membership differs from occasional use, and how occasional rid
 # **PREPARE Stage**
 
 [Here](https://divvy-tripdata.s3.amazonaws.com/index.html) is a public dataset that I will use. Motivate International Inc. has made the data available under this license. Public datasets do not contain personal information, so it is not possible to determine how often a rider uses the same service. </br>
-There was a slight variation in column names between the various datasets. However, within the 2021 - 2022 dataset, it is pertinent to note that the start and end stations, the start and end ride times, as well as the members and casual riders, are the key columns worth noting. Visualizing the data was also made easier by the latitude and longitude columns.</br>
+The data used covers the last twelve months, namely from December 2021 to November 2022. During the preparation of the data for subsequent analysis, each data file was examined for integrity, duplicate entries were identified, and whether they were correctly written. In addition, they were examined to see if there were any missing values, and for this reason the start_station_name, start_station_id, end_station_name, and end_station_id columns were removed.
 
 # **PROCESS Stage**
 
-This is the point at which the data has been processed. A thorough review was conducted to ensure that no errors were introduced, and further processing was performed to make the analysis more effective. As part of this process, Google Sheets was used. 
-
-During data processing, two new columns were added. In this table, ride_length indicates the total ride time, and day_of_week indicates the day the ride started.
+For this stage, we created two new columns in each file to keep track of how long each user had the bike. Ride_length was the name of this column. On the other hand, the second column determined when each ride began based on the day of the week. </br>
+On examination of the ride_length column before the main analysis, 74 rows were deleted for being invalid.
