@@ -13,10 +13,10 @@ Cyclistic bicycle membership differs from occasional use, and how occasional rid
 
 # **PREPARE Stage**
 
-[Here](https://divvy-tripdata.s3.amazonaws.com/index.html) is a public dataset that I will use. Motivate International Inc. has made the data available under this license. Public datasets do not contain personal information, so it is not possible to determine how often a rider uses the same service. </br>
-The data used covers the last twelve months, namely from December 2021 to November 2022. During the preparation of the data for subsequent analysis, each data file was examined for integrity, duplicate entries were identified, and whether they were correctly written. In addition, they were examined to see if there were any missing values, and for this reason the start_station_name, start_station_id, end_station_name, and end_station_id columns were removed.
+[Here](https://divvy-tripdata.s3.amazonaws.com/index.html) is a public dataset that I will use. Motivate International Inc. has made the data available under this license Since public datasets do not contain personal information, it is not possible to gauge how often riders use the same service. The data is uploaded to Rstudio, where R programming can be used for analysis.</br>
+Based on data sorted by month, the analysis used the last 12 months, from December 2021 to November 2022.For the same reason, the data has been collected directly from customers at the company, which eliminates bias and credibility issues. It also meets the requirements for Reliable, Original, Comprehensive, Current, and Cited.</br>
+During the preparation of the data for subsequent analysis, each data file was examined for integrity, duplicate entries were identified, and whether they were correctly written. In addition, they were examined to see if there were any missing values, and for this reason the start_station_name, start_station_id, end_station_name, and end_station_id columns were removed.
 
 # **PROCESS Stage**
 
-For this stage, we created two new columns in each file to keep track of how long each user had the bike. Ride_length was the name of this column. On the other hand, the second column determined when each ride began based on the day of the week. </br>
-On examination of the ride_length column before the main analysis, 74 rows were deleted for being invalid.
+At this stage, the data has been imported individually for each month, and a total file has been created for each month. The data was cleaned and two new columns were added during this process.On the other hand, the second column determined when each ride began based on the day of the week. </br>
