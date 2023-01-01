@@ -107,7 +107,7 @@ ggplot(data = all_avg, aes(x=member_casual, y=avg_length, fill=member_casual)) +
   ggtitle("Average Ride Length by Rider Type")
 
 # total user per month by user type 
-month_user <- total_trips_v2 %>%
+month_user <- total_trips_v3 %>%
   group_by(month = round_date(started_at, unit = "month"), member_casual) %>%
   summarise(count = n_distinct(ride_id), .groups='drop')
 
@@ -117,7 +117,7 @@ ggplot(data = month_user) +
   ggtitle("Number of Riders by Month")
 
 # total ride time by per month by user type
-month_length_user <- total_trips_v2 %>%
+month_length_user <- total_trips_v3 %>%
   group_by(month = round_date(started_at, unit = "month"), member_casual) %>%
   summarise(total_length = sum(ride_length), .groups='drop')
 
@@ -127,7 +127,7 @@ ggplot(data = month_length_user) +
   ggtitle("Total Ride Length per Month by Rider Type")
 
 # average ride time by per month by user type
-month_avg_user <- total_trips_v2 %>%
+month_avg_user <- total_trips_v3 %>%
   group_by(month = round_date(started_at, unit = "month"), member_casual) %>%
   summarise(avg_length = mean(ride_length), .groups='drop')
 
@@ -137,7 +137,7 @@ ggplot(data = month_avg_user) +
   ggtitle("Average Ride Length per Month by Rider Type")
 
 # number of riders by week by user type
-week_user <- total_trips_v2 %>%
+week_user <- total_trips_v3 %>%
   group_by(day_of_week, member_casual) %>%
   summarise(count = n_distinct(ride_id), .groups='drop')
 
@@ -149,7 +149,7 @@ ggplot(data = week_user) +
   ggtitle("Number of Riders by Day of Week")
 
 # total ride time by per week by user type
-week_length_user <- total_trips_v2 %>%
+week_length_user <- total_trips_v3 %>%
   group_by(day_of_week, member_casual) %>%
   summarise(total_length = sum(ride_length), .groups='drop')
 
@@ -161,7 +161,7 @@ ggplot(data = week_length_user) +
   ggtitle("Total Ride Length by Day of Week")
 
 # average ride time by per week by user type 
-week_user_avg <- total_trips_v2 %>%
+week_user_avg <- total_trips_v3 %>%
   group_by(day_of_week, member_casual) %>%
   summarise(avg_length = mean(ride_length), .groups='drop')
 
@@ -173,9 +173,9 @@ ggplot(data = week_user_avg) +
   ggtitle("Average Ride Length by Day of Week")
 
 # create new df for hourly
-total_trips_v3 <- separate(total_trips_v2, col=started_at, into=c('date',"time"), sep=" ")
-total_trips_v4 <- separate(total_trips_v3, col=time, into=c('hour',"minute"), sep=":")
-total_trips_hours <- select(total_trips_v4, -date, -minute)
+total_trips_v4 <- separate(total_trips_v3, col=started_at, into=c('date',"time"), sep=" ")
+total_trips_v5 <- separate(total_trips_v4, col=time, into=c('hour',"minute"), sep=":")
+total_trips_hours <- select(total_trips_v5, -date, -minute)
 total_trips_hours$hour <- as.numeric(as.character(total_trips_hours$hour))
 summary(total_trips_hours)
 
