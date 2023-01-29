@@ -1,4 +1,4 @@
-# Data-Analyst-Case-1
+# Data Analyst Case 1
 
 ## **Introduction**
  
